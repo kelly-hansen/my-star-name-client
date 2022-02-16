@@ -1,0 +1,207 @@
+////////// COLOR SYSTEM //////////
+$white:    #FFFFFF;
+$gray-100: #F8F7F7;
+$gray-200: #E8E5E3;
+$gray-300: #DEE2E6;
+$gray-400: #D1CAC7;
+$gray-500: #ADB5BD;
+$gray-600: #AFA39D;
+$gray-700: #495057;
+$gray-800: #70635C;
+$gray-900: #1D2124;
+$black:    #1D2124;
+
+$grays: (
+  100: $gray-100,
+  200: $gray-200,
+  300: $gray-300,
+  400: $gray-400,
+  500: $gray-500,
+  600: $gray-600,
+  700: $gray-700,
+  800: $gray-800,
+  900: $gray-900
+);
+
+$colors: (
+  white: $white,
+  black: $black
+);
+
+$primary:        #E86C30;
+$primary-light:  #E58871;
+$secondary:      #F4C085;
+$success:        #71A130;
+$info:           #4FA4C4;
+$warning:        #E2B846;
+$danger:         #C95E77;
+$light:            $gray-100;
+$dark:             $gray-400;
+$black:          #38312E;
+
+$warm-gray:      #7D6E66;
+$warm-gray-light:#CFC3BC;
+
+$theme-colors: (
+  primary:    $primary,
+  secondary:  $secondary,
+  success:    $success,
+  info:       $info,
+  warning:    $warning,
+  danger:     $danger,
+  light:      $light,
+  dark:       $dark,
+  black:      $black,
+  white:      $white,
+  warm-gray:  $warm-gray
+);
+
+// GRID BREAKPOINTS
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1440px,
+  xxl: 1600px
+);
+
+////////// BACKGROUND //////////
+$content-bg:   $gray-100;
+$border-color: $gray-400;
+
+////////// FOOTER //////////
+$footer-bg:      $gray-800;
+$footer-color:   $white;
+$footer-height:  75px;
+
+////////// FONTS //////////
+// $type1-light:     'openSans-light', sans-serif; // fontWeight: 300
+$type1-italic:     'PTSans-italic', sans-serif; // fontWeight: 300
+$type1-regular:   'PTSans-regular', sans-serif; // fontWeight: 400
+// $type1-semibold:  'PTSans-semibold', sans-serif; // fontWeight: 600
+$type1-bold:      'PTSans-bold', sans-serif; // fontWeight: 700
+
+$default-font-size: 1em;
+$text-muted: $gray-600;
+$body-color: $black;
+
+////////// SIDEBAR ////////
+$sidebar-width-lg:                    240px;
+$sidebar-light-bg:                    $white;
+$sidebar-light-menu-color:            $gray-600;
+$sidebar-light-menu-active-bg:        initial;
+$sidebar-light-menu-hover-bg:         $gray-100;
+$sidebar-light-profile-title-color:   $gray-500;
+$sidebar-menu-font-size:  14px;
+$sidebar-menu-padding:    16px 26px;
+
+///////// NAVBAR ////////
+$navbar-height:           70px;
+$navbar-light-color:      $black;
+$navbar-font-size:        16px;
+$navbar-icon-font-size:   20px;
+
+///////// BUTTONS ////////
+$btn-line-height:     1;
+
+$btn-font-size-xs:    14px;
+$btn-padding-y-xs:    6px;
+$btn-padding-x-xs:    14px;
+
+$btn-font-size-sm:    16px;
+$btn-padding-y-sm:    10px;
+$btn-padding-x-sm:    14px;
+
+$btn-font-size:       16px;
+$btn-padding-y:       16px;
+$btn-padding-x:       19px;
+
+$btn-font-size-lg:    16px;
+$btn-padding-y-lg:    20px;
+$btn-padding-x-lg:    30px;
+
+$btn-border-radius:     3px;
+$btn-border-radius-xs:  3px;
+$btn-border-radius-sm:  3px;
+$btn-border-radius-lg:  3px;
+
+/////////  FORMS /////////
+$input-bg:                color(white);
+$input-border-radius:     3px;
+$input-placeholder-color: $gray-400;
+$input-font-size:         16px;
+
+$input-padding-y:         16px;
+$input-padding-x:         14px;
+$input-line-height:       1;
+
+//////// TABLES ////////
+$table-accent-bg:       $gray-100;
+$table-hover-bg:        $secondary;
+$table-border-color:    $border-color;
+$table-active-bg:       $secondary;
+
+////////// MEASUREMENT AND PROPERTY VARIABLES //////////
+$card-padding-y:                      1.88rem;
+$card-padding-x:                      1.81rem;
+$action-transition-duration:          0.25s;
+$action-transition-timing-function:   ease;
+
+////////// BREAD CRUMBS VARIABLES //////////
+$breadcrumb-padding-y:              0.56rem;
+$breadcrumb-padding-x:              1.13rem;
+$breadcrumb-item-padding:           .5rem;
+$breadcrumb-margin-bottom:          1rem;
+$breadcrumb-font-size:              1rem;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-border-color:           $border-color;
+$breadcrumb-divider-color:          $gray-500;
+$breadcrumb-active-color:           $gray-700;
+$breadcrumb-divider:                "/";
+
+$breadcrumb-custom-padding-y:       0;
+$breadcrumb-custom-padding-x:       0;
+$breadcrumb-custom-item-padding-y:  0.56rem;
+$breadcrumb-custom-item-padding-x:  10px;
+$breadcrumb-custom-item-color:      $gray-500;
+$breadcrumb-item-bg:                #dbe3e6;
+$breadcrumb-item-color:             $gray-500;
+
+////////// MODALS VARIABLES //////////
+$modal-inner-padding:               15px;
+$modal-dialog-margin:               10px;
+$modal-dialog-margin-y-sm-up:       30px;
+$modal-title-line-height:           $line-height-base;
+$modal-content-bg:                  $content-bg;
+$modal-content-box-shadow-xs:       0 3px 9px rgba($black, .5);
+$modal-content-box-shadow-sm-up:    0 5px 15px rgba($black, .5);
+
+$modal-backdrop-bg:                 $black;
+$modal-backdrop-opacity:            .5;
+
+$modal-header-border-color:         $border-color;
+$modal-content-border-color:        $border-color;
+$modal-footer-border-color:         $border-color;
+
+$modal-header-border-width:         $border-width;
+$modal-content-border-width:        $border-width;
+$modal-footer-border-width:         $border-width;
+
+$modal-header-padding-x:            26px;
+$modal-header-padding-y:            0px;
+
+$modal-body-padding-x:              26px;
+$modal-body-padding-y:              35px;
+
+$modal-footer-padding-x:            31px;
+$modal-footer-padding-y:            15px;
+
+$modal-lg:                          80vw;
+$modal-md:                          860px;
+$modal-sm:                          500px;
+$modal-transition:                  transform .4s ease;
+
+////////// SHADOWS //////////
+$box-shadow-sm: 0 0.3rem .6rem rgba(0, 0, 0, 0.04);
+$box-shadow-nav: 0px 2px 2px 0px rgba(138, 122, 103, 0.2);

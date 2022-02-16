@@ -1,0 +1,59 @@
+/* === Import FontAwesome functions and variables === */
+@import "vendors/fa/fontawesome.scss";
+@import "vendors/fa/brands.scss";     // fab
+@import "vendors/fa/duotone.scss";    // fad
+// @import "vendors/fa/light.scss";   // fal
+@import "vendors/fa/regular.scss";    // far
+@import "vendors/fa/solid.scss";      // fas
+
+/* === Import Bootstrap functions and variables === */
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+/* === Import template variables === */
+@import "variables";
+
+/* === SCSS Compass Functions === */
+@import "../../node_modules/compass-mixins/lib/animate";
+
+/* === Boostrap Main SCSS === */
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* === Template mixins === */
+@import "mixins/animation";
+@import "mixins/color-functions";
+@import "mixins/misc";
+
+/* === Core Styles === */
+@import "reset";
+@import "fonts";
+@import "typography";
+@import "misc";
+@import "layouts";
+@import "utilities";
+
+/* === Components === */
+//SCT
+@import "components/badges";
+@import "components/breadcrumbs";
+@import "components/buttons";
+@import "components/cards";
+@import "components/forms";
+@import "components/lists";
+@import "components/modals";
+@import "components/navbar";
+@import "components/pagination";
+@import "components/popovers";
+@import "components/steppers";
+@import "components/tables";
+
+/* === Custom === */
+//Counselor Direct
+@import "custom/cd_application";
+@import "custom/cd_dropdown";
+@import "custom/cd_footer";
+@import "custom/cd_landing";
+@import "custom/cd_videos";
+
+/* === Vendors === */
+@import "vendors/toast";

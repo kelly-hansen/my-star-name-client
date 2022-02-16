@@ -1,0 +1,38 @@
+/* Popovers */
+.popover-lg {
+	max-width: 550px;
+}
+
+.popover {
+	z-index: 1060;
+	border: 0;
+	border-radius: 0;
+
+	.popover-header {
+		background-color: $primary;
+		font-size: .9375rem;
+		border-bottom: 0;
+		border-radius: 0;
+		color: $white;
+	}
+
+	.popover-body {
+		background-color: $light;
+	}
+
+	&.left {
+		.arrow {
+			&:after {
+				border-left-color: $popover-arrow-color;
+			}
+		}
+	}
+
+	&.right {
+		.arrow {
+			&:after {
+				border-right-color: $popover-arrow-color;
+			}
+		}
+	}
+}

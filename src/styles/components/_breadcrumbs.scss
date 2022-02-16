@@ -1,0 +1,57 @@
+/* Breadcrumbs */
+
+.breadcrumb-container{
+  min-height: 50px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+
+  h1, h2 {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+
+  .breadcrumb-arrow {
+    font-size: 1.7rem;
+    margin: auto .8rem auto 0;
+    cursor: pointer;
+    position: relative;
+  }
+
+  > * > div {
+    display: flex;
+  }
+
+  .breadcrumb-nav {
+    padding-left: 28px;
+    margin-top: .4rem;
+
+    .breadcrumb {
+      border: none;
+      padding: 0 4px;
+      margin: 0;
+      border-radius: 0;
+    
+      .breadcrumb-item {
+        font-size: $breadcrumb-font-size;
+        font-family: $type1-regular;
+        color: $breadcrumb-item-color;
+  
+        a {
+         color: $gray-500; 
+         
+         &:hover {
+           color: $primary; 
+         }
+        }
+      }
+    }
+  }  
+}
+
+
+/* inverse breadcrumb */
+@each $color, $value in $theme-colors {
+  .bg-inverse-#{$color} {
+    @include breadcrumb-inverse-variant($value);
+  }
+}

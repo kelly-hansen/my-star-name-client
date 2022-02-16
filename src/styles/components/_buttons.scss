@@ -1,0 +1,181 @@
+/* Buttons */
+.btn {
+  font-size: $btn-font-size;
+  line-height: 1;
+  font-family: $type1-bold;
+  border-radius: $btn-border-radius;
+  cursor: pointer;
+
+  i { margin-right: .3125rem; }
+
+  .btn-label {
+    &:before {
+      font-size: 1rem;
+      line-height: 5px;
+      vertical-align: middle;
+    }
+
+    &.btn-label-left { margin-right: 5px; }
+    &.btn-label-right { margin-left: 5px; }
+  }
+
+  &.btn-rounded { @include border-radius(50px); }
+  &.btn-sm { font-size: $btn-font-size-sm; }
+  &.btn-lg { font-size: $btn-font-size-lg; }
+  
+  &.btn-xs {
+    padding: $btn-padding-y-xs $btn-padding-x-xs;
+    font-size: $btn-font-size-xs;
+  }
+  
+  &.btn-danger,
+  &.btn-info,
+  &.btn-warning {
+    color: $white;
+  }
+
+  &.btn-light {
+    color: $black;
+    border-color: $gray-400;
+  }
+
+  &.btn-dark {
+    color: $white;
+  }
+
+  &.btn-success {
+    color: $white;
+  }
+  
+  &.btn-outline-light { @include button-outline-variant(theme-color(light), color(white)); }
+  
+  &.btn-outline-secondary {
+    color: rgba($black, 0.5);
+    &:hover{
+      color: $white;
+    }
+  }
+  
+  &.btn-inverse-secondary {
+    background-color: rgba(theme-color(secondary), 0.5);
+    color: rgba($black, 0.5);
+    &:hover {
+      color: rgba($black, 0.5);
+    }
+  }
+  
+  &.btn-inverse-light {
+    background-color: $white;
+    color: rgba($black, 0.5);
+    border-color: lighten($black, 85%);
+    &:hover {
+      color: rgba($black, 0.5);
+      border-color: lighten($black, 85%);
+    }
+  }
+  
+  &.btn-outline-light {
+    &:hover {
+      color: black;
+    }
+  }
+  
+  &.btn-link {
+    color: $primary;
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: darken($primary, 10%);
+    }
+  }
+
+  &.btn-disabled {
+    background-color: $gray-400;
+    border: 1px solid $gray-400;
+    color: $warm-gray;
+  }
+
+  &.application-btn {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    min-width: 150px;
+  }
+
+}
+
+.btn-group {
+  border: $border-width solid $border-color;
+  @include border-radius($btn-border-radius);
+
+  .btn {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+
+    &:last-child { border-right: none; }
+    &.btn-primary { border-color: darken(theme-color(primary), 3%); }
+    &.btn-secondary { border-color: darken(theme-color(secondary), 3%); }
+    &.btn-info { border-color: darken(theme-color(info), 3%); }
+    &.btn-warning { border-color: darken(theme-color(warning), 3%); }
+    &.btn-success { border-color: darken(theme-color(success), 3%); }
+    &.btn-danger { border-color: darken(theme-color(danger), 3%); }
+    &.btn-dark { border-color: darken(theme-color(dark), 3%); }
+    &.btn-light { border-color: darken(theme-color(light), 3%); }
+    &.btn-black { border-color: darken(theme-color(black), 3%); }
+    &.btn-white { border-color: darken(theme-color(white), 3%); }
+  }
+}
+
+.btn-toolbar {
+  .btn-group {
+    +.btn-group {
+      @extend .ml-2;
+    }
+  }
+}
+
+/* inverse buttons */
+@each $color, $value in $theme-colors {
+  .btn-inverse-#{$color} {
+    @include button-inverse-variant($value);
+  }
+}
+
+.btn-white {
+  color: $primary;
+  border: 1px solid $gray-200;
+  &:hover {
+    color: $primary;
+    background-color: $gray-200;
+  }
+}
+
+/* Scroll To Top Button */
+.btn-scroll-to-top {
+  position: fixed;
+  visibility: hidden;
+  right: 10px;
+  width: 44px;
+  height: 44px;
+  background-color: $primary;
+  opacity: 0;
+  border-radius: 50%;
+  border: none;
+  z-index: 1031;
+  transition: all ease .2s;
+
+  i {
+    color: white;
+    font-size: 1.2em;
+  }
+
+  &.show {
+    visibility: visible;
+    opacity: 0.3;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+

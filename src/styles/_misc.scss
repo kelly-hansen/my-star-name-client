@@ -1,0 +1,30 @@
+/* Miscellanoeous */
+body {
+  background: $sidebar-light-bg;
+}
+
+pre {
+  background: gray(300);
+  padding: 15px;
+  font-size: 14px;
+}
+
+code {
+  background: gray(200);
+  padding: .2rem .4rem;
+}
+
+a.no-link:hover,
+a.no-link:focus {
+  text-decoration: none !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bg-hover {
+  &:hover {
+    background: $secondary;
+  }
+}

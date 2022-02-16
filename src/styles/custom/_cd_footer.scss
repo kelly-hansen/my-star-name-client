@@ -1,0 +1,36 @@
+/* Footer */
+.footer {
+  // height: $footer-height;
+  // position: fixed;
+  left: 0;
+  bottom: 0;
+  background: $footer-bg;
+  color: $footer-color;
+  padding: 10px;
+  transition: all $action-transition-duration $action-transition-timing-function;
+  -moz-transition: all $action-transition-duration $action-transition-timing-function;
+  -webkit-transition: all $action-transition-duration $action-transition-timing-function;
+  -ms-transition: all $action-transition-duration $action-transition-timing-function;
+  width: 100%;
+  font-size: 13px;
+  font-family: $type1-regular;
+  margin-top: auto;
+  min-height: $footer-height;
+  font-size: 20px;
+
+  a {
+    color: $white;
+    font-size: inherit;
+  }
+
+  @media (max-width: 991px) {
+    margin-left: 0;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+  > div > div {
+    background: $footer-bg;
+  }
+}

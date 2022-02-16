@@ -1,0 +1,69 @@
+.app-wrapper {
+  padding-top: $navbar-height;
+  min-height: calc(100vh - 75px);
+  // padding-bottom: $footer-height;
+
+  .landing-page {
+    .landing-logo {
+      color: #FFD800;
+      font-size: 5rem;
+    }
+
+
+    .hero-container {
+      width: 100%;
+      height: 500px;
+      top: 10px;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      color: white;
+      .hero-content {
+        background: rgba(56, 49, 46, 0.8);
+        padding: 30px;
+        top: 60px;
+      }
+      @media (max-width: 992px) {
+        left: 0px;
+      }
+      @media (max-width: 576px) {
+        .hero-content {
+          min-height: 500px;
+        }
+        .hero-title {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  .prescreen-container {
+    min-height: calc(100vh - 200px);
+    background-color: $light;
+  }
+
+  .carousel.slide {
+    min-height: 500px;
+    .carousel-img {
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .carousel-control-prev, .carousel-control-next {
+      width: 8%;
+      z-index: 100;
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 0px;
+  }
+  .static-documents {
+    li {
+      font-size: 1rem;
+    }
+  }
+}

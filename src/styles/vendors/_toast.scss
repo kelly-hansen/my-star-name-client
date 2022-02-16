@@ -1,0 +1,20 @@
+.Toastify__toast-container--top-right {
+  top: 4.5em !important;
+  right: 1.5em !important;
+}
+
+.Toastify__toast--error {
+  background: theme-color('error') !important;
+}
+
+.Toastify__toast--success {
+  background: theme-color('success') !important;
+}
+
+.Toastify__toast--info {
+  background: theme-color('info') !important;
+}
+
+.Toastify__toast--warn {
+  background: theme-color('warn') !important;
+}

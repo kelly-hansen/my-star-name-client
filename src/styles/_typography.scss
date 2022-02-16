@@ -1,0 +1,160 @@
+/* Typography */
+body {
+  font-size: 1rem;
+  font-family: $type1-regular;
+  font-weight: initial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $type1-bold;
+}
+
+.display-1 {
+  font-size: 3.75rem;
+  @media (max-width: 991px) {
+    font-size: 3rem;
+  }
+}
+
+.display-2 {
+  font-size: 3.125rem;
+  @media (max-width: 991px) {
+    font-size: 2.5rem;
+  }
+}
+
+.display-3 {
+  font-size: 2.5rem;
+  @media (max-width: 991px) {
+    font-size: 2rem;
+  }
+}
+
+.display-4 {
+  font-size: 1.875rem;
+  @media (max-width: 991px) {
+    font-size: 1.5rem;
+  }
+}
+
+.display-5 {
+  font-size: 1.25rem;
+  @media (max-width: 991px) {
+    font-size: 1rem;
+  }
+}
+
+.blockquote {
+  padding: 1.25rem;
+  border: 1px solid theme-color('secondary');
+  border-radius: 5px;
+  border-left: 8px solid theme-color('secondary');
+  font-size: 1rem;
+}
+
+address {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.page-title {
+  color: $black;
+  margin: 0.38rem 0 0.75rem 0;
+}
+
+.card-title {
+  color: color(black);
+  margin-bottom: 1.125rem;
+  text-transform: capitalize;
+}
+
+.card-subtitle {
+  @extend .text-gray;
+  font-family: $type1-regular;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.card-description {
+  margin-bottom: .9375rem;
+  font-family: $type1-regular;
+}
+
+a { color: $primary }
+
+a {
+  &.text-primary {
+    &:hover {
+      color: theme-color(primary) !important;
+    }
+  }
+}
+
+// FONT
+.f-regular {
+  font-family: $type1-regular !important;
+}
+
+.f-semibold {
+  font-family: $type1-regular !important;
+  font-weight: 700;
+}
+
+
+.f-bold {
+  font-family: $type1-bold !important;
+}
+
+.f-italic {
+  font-family: $type1-italic !important;
+}
+
+.caption-14 {
+  font-size: 14px !important;
+}
+
+.caption-12 {
+  font-size: 12px !important;
+}
+
+small,
+input,
+textarea,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select {
+  font-family: $type1-regular !important;
+}
+
+.text-hover-none {
+  &:hover {
+    color: $black;
+  }
+}
+
+.text-hover {
+  &:hover {
+    color: $primary;
+  }
+}
+
+.text-link {
+  color: $primary;
+  &:hover {
+    cursor: pointer;
+    color: $primary;
+    text-decoration: underline;
+  }
+}
